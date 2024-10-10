@@ -11,9 +11,9 @@ load_dotenv()
 @pytest.fixture
 def setup_environment(monkeypatch):
     # Set up environment variables for testing
-    monkeypatch.setenv("CSV_DATA_PATH", "test_data.csv")
+    monkeypatch.setenv("RAW_DATA_PATH", "test_data.csv")
     monkeypatch.setenv("MODELS_PATH", "models")
-    monkeypatch.setenv("CLUSTERED_ASBTRACTS_PATH", "clustered_abstracts.csv")
+    monkeypatch.setenv("CLUSTERED_ABSTRACTS_PATH", "clustered_abstracts.csv")
     
     # Create a mock CSV file for testing
     test_data = pd.DataFrame({
