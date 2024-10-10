@@ -17,11 +17,12 @@ Follow these steps to install the project:
 2. Download NSF Research Awards Abstracts dataset on your working machine
 3. create virtual env and install all dependencies from requirements.txt
 4. create .env file in notebooks, pipelines and tests folders to set environment variables needs in project
-5. Create data and models folder in root directory
+5. Create data and models folders in root directory
 6. set these environment variables in all .env files: 
     - DATA_PATH:the path where you downloaded the dataset
-    - CSV_DATA_PATH: The full path to the file to save the abstract_narration.csv file when running the eda notebook (this file inside data folder)
-    - CLUSTERED_ASBTRACTS_PATH: The full path to the file to save the clustered_abstracts.csv file when running the pipelines/training.py (this file inside data folder)
+    - RAW_DATA_PATH: The full path to the file, to save the abstract_narration.csv file when running the eda notebook (this file inside data folder)
+    - FINAL_DATA_PATH: The full path to the file, to save the final_data.csv file when running the eda notebook (this file inside data folder)
+    - CLUSTERED_ABSTRACTS_PATH: The full path to the file, to save the clustered_abstracts.csv file when running the pipelines/training.py (this file inside data folder)
     - MODELS_PATH=The full path to the models folder to save .pkl files when running the pipelines/training.py
     
 5. Please review the eda in the notebooks directory to understand the basics of the dataset and how to use .env file
