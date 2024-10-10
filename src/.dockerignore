@@ -1,0 +1,45 @@
+# Ignore Python bytecode files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore version control directories
+.git
+.gitignore
+
+# Ignore cache and temporary files
+*.log
+*.tmp
+*.cache
+
+# Ignore local configuration files
+*.local
+*.local.env
+
+# Ignore test directories and files
+tests/
+test_*.py
+
+# Ignore Dockerfile and related files
+Dockerfile
+docker-compose.yml
+
+# Ignore the venv directory if you're using virtual environments
+venv/
+env/
+
+# Ignore any local data directories
+data/
+*.csv
+*.json
+
+# Ignore any IDE or editor-specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
